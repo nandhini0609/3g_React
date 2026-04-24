@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --font-poppins: "Poppins", sans-serif;
+    --bg-dark: #040405;
+    --bg-red: #28000f;
+    --text-main: #f6f6f6;
+    --text-muted: #9b9ba3;
+    --brand: #e4005a;
+    --brand-soft: #920035;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-poppins);
+    background: #000;
+}
+
+.homePage {
+    min-height: 100vh;
+    color: var(--text-main);
+    background:
+        radial-gradient(circle at 72% 52%, rgba(228, 0, 90, 0.18) 0%, rgba(228, 0, 90, 0) 40%),
+        linear-gradient(100deg, var(--bg-dark) 25%, #0c0006 52%, var(--bg-red) 100%);
+}
+
+.navbar {
+    width: min(1320px, 100%);
+    margin: 0 auto;
+    min-height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding: 0.9rem 2.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbarImg {
+    width: 74px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.9rem, 2vw, 2.2rem);
+}
+
+.navLinks a {
+    font-family: var(--font-poppins);
+    color: #95a0ad;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    transition: color 180ms ease;
+}
+
+.navLinks a:hover,
+.navLinks a.active {
+    color: var(--brand);
+}
+
+.joinBtn,
+.getStarted {
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 180ms ease, filter 180ms ease;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.joinBtn {
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    padding: 0.72rem 2rem;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.hero {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    text-align: center;
+    padding: clamp(3rem, 8vw, 8rem) 1.2rem 5rem;
+}
+
+.overline {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(3rem, 12vw, 7.5rem);
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(228, 0, 90, 0.6);
+    line-height: 0.85;
+}
+
+.hero h1 {
+    margin: 1.6rem auto 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.8rem, 8vw, 7.2rem);
+    line-height: 0.98;
+    letter-spacing: 0.01em;
+    font-weight: 800;
+    max-width: 1120px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 16px 50px rgba(0, 0, 0, 0.9);
+}
+
+.hero h1 span {
+    color: var(--brand);
+}
+
+.heroDesc {
+    max-width: 760px;
+    margin: 1.7rem auto 2.2rem;
+    font-size: clamp(1.0rem, 1.65vw, 1.25rem);
+    line-height: 1.45;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.getStarted {
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    font-size: 1.3rem;
+    line-height: 1;
+    padding: 0.86rem 2.15rem;
+}
+
+.joinBtn:hover,
+.getStarted:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem 1.2rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .navLinks {
+        order: 3;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 0.5rem;
+    }
+
+    .hero {
+        padding-top: 3rem;
+    }
+}
