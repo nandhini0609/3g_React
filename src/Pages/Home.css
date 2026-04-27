@@ -234,6 +234,166 @@ body {
     max-height: 640px;
 }
 
+.servicesSection {
+    padding: clamp(2.6rem, 6vw, 5.5rem) 1.2rem clamp(3rem, 6vw, 5rem);
+    background: #ffffff;
+    color: #111;
+}
+
+.servicesIntro {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.15fr 0.95fr;
+    gap: clamp(1.8rem, 4vw, 4rem);
+    align-items: start;
+}
+
+.servicesHeadingBlock h2 {
+    margin: 1rem 0 0;
+    max-width: 700px;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.6rem, 6vw, 5.1rem);
+    line-height: 0.96;
+    letter-spacing: 0.01em;
+    color: #060606;
+}
+
+.servicesOverline {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.95rem;
+    color: #cb124f;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(1.2rem, 1.9vw, 1.9rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.servicesOverline::before,
+.servicesOverline::after {
+    content: "";
+    width: 72px;
+    height: 2px;
+    background: #cb124f;
+}
+
+.servicesCopy {
+    padding-top: 0.5rem;
+    max-width: 470px;
+    justify-self: end;
+}
+
+.servicesCopy p {
+    margin: 0;
+    color: #777e89;
+    font-size: clamp(1rem, 1.6vw, 1.18rem);
+    line-height: 1.38;
+}
+
+.servicesCta {
+    margin-top: 1.6rem;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.95rem 1.45rem;
+    background: linear-gradient(120deg, #cb124f, #f0045f);
+    color: #fff;
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 12px 32px rgba(203, 18, 79, 0.28);
+    transition: transform 180ms ease, filter 180ms ease;
+}
+
+.servicesCta:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+}
+
+.servicesGrid {
+    width: min(1280px, 100%);
+    margin: clamp(2.8rem, 8vw, 5.5rem) auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.1rem;
+}
+
+.serviceCard {
+    position: relative;
+    min-height: 440px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #111;
+    isolation: isolate;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 24px 42px rgba(0, 0, 0, 0.2);
+}
+
+.serviceCard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 0;
+    right: 0;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 30%, rgba(196, 10, 70, 0.34) 100%),
+        linear-gradient(0deg, rgba(8, 8, 10, 0.16), rgba(8, 8, 10, 0.16));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.serviceCard::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.85) 50%, transparent 100%);
+    opacity: 0.5;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.serviceCardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.01);
+}
+
+.serviceCardOverlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(16, 16, 20, 0.02) 0%, rgba(16, 16, 20, 0.1) 24%, rgba(196, 10, 70, 0.6) 100%),
+        linear-gradient(0deg, rgba(10, 10, 12, 0.3), rgba(10, 10, 12, 0.3));
+    z-index: 1;
+}
+
+.serviceCard h3 {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 3;
+    margin: 0;
+    color: #fff;
+    font-family: var(--font-poppins);
+    font-size: clamp(1rem, 1.2vw, 1.35rem);
+    line-height: 1.1;
+    font-weight: 700;
+    padding: 0.68rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(12, 12, 16, 0.34);
+    backdrop-filter: blur(8px);
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+}
+
 @media (max-width: 900px) {
     .homePage {
         padding-top: var(--navbar-mobile-height);
@@ -283,5 +443,34 @@ body {
     .aboutBigImage {
         min-height: 200px;
         max-height: 400px;
+    }
+
+    .servicesIntro {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesCopy {
+        max-width: none;
+        justify-self: start;
+        padding-top: 0;
+    }
+
+    .servicesGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .serviceCard {
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 560px) {
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .serviceCard {
+        min-height: 300px;
+        border-radius: 18px;
     }
 }
