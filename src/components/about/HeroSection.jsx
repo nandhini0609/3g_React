@@ -1,7 +1,7 @@
 export function HeroSection() {
     return (
         <main className="hero">
-            <p className="overline">3RD GEN</p>
+            <p className="overline">3G FIT STUDIO</p>
             <h1>
                 TRAIN <span>HARD</span> SEE RESULTS.
                 <br />

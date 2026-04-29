@@ -568,6 +568,240 @@ body {
     filter: brightness(1.06);
 }
 
+.commitmentSection {
+    padding: clamp(3.2rem, 7vw, 5.8rem) 1.2rem clamp(3.6rem, 7vw, 5.2rem);
+    background: #ececef;
+    color: #111111;
+}
+
+.commitmentInner {
+    width: min(1320px, 100%);
+    margin: 0 auto;
+}
+
+.commitmentHeader {
+    text-align: center;
+}
+
+.commitmentHeader h2 {
+    margin: 0;
+    color: #c80e4a;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: clamp(2.8rem, 7vw, 6.2rem);
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+}
+
+.commitmentHeader p {
+    margin: 1.5rem auto 0;
+    max-width: 740px;
+    color: #111111;
+    font-family: var(--font-poppins);
+    font-size: clamp(1rem, 1.6vw, 2rem);
+    line-height: 1.45;
+    font-weight: 700;
+}
+
+.commitmentTagline {
+    margin-top: 1rem;
+    color: #c80e4a;
+    font-weight: 700;
+}
+
+.commitmentCard {
+    margin: clamp(2.4rem, 7vw, 4.4rem) auto 0;
+    width: min(100%, 1040px);
+    border-radius: 54px;
+    padding: clamp(2rem, 4vw, 3.4rem) clamp(1.3rem, 5vw, 5rem);
+    background: linear-gradient(180deg, #d1074f 0%, #bf0044 100%);
+    box-shadow: 0 26px 48px rgba(164, 5, 57, 0.26);
+}
+
+.commitmentCard h3 {
+    margin: 0;
+    color: #080808;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.3rem, 7vw, 5.6rem);
+    line-height: 0.96;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+.commitmentCard p {
+    margin: clamp(1rem, 2.4vw, 1.8rem) 0 0;
+    color: #080808;
+    font-family: var(--font-poppins);
+    font-size: clamp(1rem, 1.8vw, 2rem);
+    line-height: 1.35;
+    font-weight: 500;
+}
+
+.commitmentCta {
+    margin-top: clamp(1.6rem, 2.5vw, 2.2rem);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 192px;
+    border-radius: 999px;
+    padding: 0.86rem 1.7rem;
+    background: #050505;
+    color: #ffffff;
+    font-family: var(--font-poppins);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 180ms ease, filter 180ms ease;
+}
+
+.commitmentCta:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+.footerSection {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(3rem, 6vw, 5rem) 1.2rem 1.4rem;
+    background:
+        linear-gradient(105deg, rgba(4, 4, 5, 0.95) 0%, rgba(44, 0, 17, 0.95) 48%, rgba(73, 0, 24, 0.94) 100%),
+        radial-gradient(circle at 76% 52%, rgba(213, 21, 75, 0.32) 0%, rgba(213, 21, 75, 0) 45%),
+        #100005;
+    color: #f5f5f7;
+}
+
+.footerOverlay {
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.02) 0, rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 24px);
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.footerInner {
+    position: relative;
+    z-index: 1;
+    width: min(1320px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr 0.95fr 1.1fr;
+    gap: clamp(1.3rem, 3vw, 2.8rem);
+}
+
+.footerBrandColumn {
+    display: grid;
+    align-content: start;
+    gap: 0.7rem;
+}
+
+.footerLogo {
+    width: 120px;
+    height: auto;
+}
+
+.footerBrandColumn h2 {
+    margin: 0.5rem 0 0;
+    font-family: var(--font-poppins);
+    font-size: clamp(2.1rem, 5vw, 4.2rem);
+    line-height: 0.95;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+
+.footerFollow {
+    margin: 0.7rem 0 0;
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    font-weight: 700;
+}
+
+.footerSocials {
+    display: flex;
+    gap: 0.62rem;
+}
+
+.footerSocials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #d1154b;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-poppins);
+    font-size: 0.84rem;
+    font-weight: 700;
+    transition: transform 180ms ease, filter 180ms ease;
+}
+
+.footerSocials a:hover,
+.footerLinksColumn a:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+.footerLinksColumn h3,
+.footerProgramsColumn h3,
+.footerContactColumn h3 {
+    margin: 0;
+    color: #ffffff;
+    font-family: var(--font-poppins);
+    font-size: clamp(1.3rem, 1.9vw, 1.8rem);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.footerLinksColumn ul,
+.footerProgramsColumn ul {
+    margin: 1.1rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.54rem;
+}
+
+.footerLinksColumn a,
+.footerProgramsColumn li,
+.footerContactColumn p {
+    color: #f1f1f3;
+    text-decoration: none;
+    font-family: var(--font-poppins);
+    font-size: clamp(1rem, 1.45vw, 1.2rem);
+    line-height: 1.26;
+    font-weight: 500;
+}
+
+.footerContactColumn {
+    display: grid;
+    gap: 0.82rem;
+}
+
+.footerContactColumn p {
+    margin: 0.35rem 0 0;
+}
+
+.footerCopyright {
+    position: relative;
+    z-index: 1;
+    width: min(1320px, 100%);
+    margin: clamp(1.8rem, 4vw, 2.4rem) auto 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.footerCopyright p {
+    margin: 0;
+    text-align: center;
+    color: #d7d7dd;
+    font-family: var(--font-poppins);
+    font-size: clamp(0.9rem, 1.2vw, 1.06rem);
+    line-height: 1.3;
+    font-weight: 500;
+}
+
 .plansSection {
     padding: clamp(3.2rem, 7vw, 5.8rem) 1.2rem clamp(3.8rem, 7vw, 6rem);
     background: #050505;
@@ -901,6 +1135,10 @@ body {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .footerInner {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .serviceCard {
         min-height: 360px;
     }
@@ -919,6 +1157,18 @@ body {
 }
 
 @media (max-width: 640px) {
+    .commitmentCard {
+        border-radius: 30px;
+    }
+
+    .commitmentCard p br {
+        display: none;
+    }
+
+    .commitmentCta {
+        font-size: 1.1rem;
+    }
+
     .plansInner h2 {
         font-size: clamp(2rem, 9vw, 3.4rem);
     }
@@ -957,6 +1207,10 @@ body {
 
     .planRowPrice {
         justify-self: start;
+    }
+
+    .footerInner {
+        grid-template-columns: 1fr;
     }
 }
 

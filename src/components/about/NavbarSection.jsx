@@ -1,9 +1,9 @@
-import logo from "/logo.png"
+import logo from "/brand-logo.svg"
 
 export function NavbarSection() {
     return (
         <header className="navbar">
-            <img src={logo} alt="3rd generation gym logo" className="navbarImg" />
+            <img src={logo} alt="3G Fitness Studio logo" className="navbarImg" />
 
             <nav className="navLinks" aria-label="Primary">
                 <a href="#" className="active">Home</a>
