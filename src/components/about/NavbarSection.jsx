@@ -1,4 +1,6 @@
 import logo from "/brand-logo.svg"
+import { NavLink } from "react-router"
+import "./NavbarSection.css"
 
 export function NavbarSection() {
     return (
@@ -6,13 +8,13 @@ export function NavbarSection() {
             <img src={logo} alt="3G Fitness Studio logo" className="navbarImg" />
 
             <nav className="navLinks" aria-label="Primary">
-                <a href="#" className="active">Home</a>
-                <a href="#">About</a>
+                <NavLink to="/" end>Home</NavLink>
+                <NavLink to="/about">About</NavLink>
                 <a href="#">Services</a>
                 <a href="#">Products</a>
                 <a href="#">Career</a>
                 <a href="#">Franchise</a>
-                <a href="#">Contact</a>
+                <NavLink to="/contact">Contact</NavLink>
             </nav>
 
             <button className="joinBtn" type="button">Join Now &gt;&gt;</button>

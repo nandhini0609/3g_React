@@ -1,0 +1,91 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    min-height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding: 0.9rem 2.2rem;
+    background: rgba(4, 4, 5, 0.94);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbarImg {
+    width: 74px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.9rem, 2vw, 2.2rem);
+}
+
+.navLinks a {
+    font-family: var(--font-poppins);
+    color: #95a0ad;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    transition: color 180ms ease;
+}
+
+.navLinks a:hover,
+.navLinks a.active {
+    color: var(--brand);
+}
+
+.joinBtn {
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 180ms ease, filter 180ms ease;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.03em;
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    padding: 0.72rem 2rem;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.joinBtn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem 1.2rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .navLinks {
+        order: 3;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 0.25rem;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navLinks a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+}

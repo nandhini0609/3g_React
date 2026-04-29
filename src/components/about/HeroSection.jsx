@@ -1,3 +1,5 @@
+import "./HeroSection.css"
+
 export function HeroSection() {
     return (
         <main className="hero">

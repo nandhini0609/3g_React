@@ -1,0 +1,96 @@
+.aboutPage {
+    min-height: 100vh;
+    padding-top: var(--navbar-height);
+    background: #000;
+    color: #fff;
+}
+
+.aboutHeaderSection {
+    position: relative;
+    overflow: hidden;
+    min-height: min(720px, calc(100vh - var(--navbar-height)));
+    background:
+        linear-gradient(90deg, rgba(172, 0, 56, 0.78) 0%, rgba(96, 0, 30, 0.72) 40%, rgba(7, 7, 9, 0.95) 76%),
+        url("/banner-bg.png") center / cover no-repeat;
+}
+
+.aboutHeaderInner {
+    width: min(1360px, 100%);
+    margin: 0 auto;
+    min-height: inherit;
+    display: grid;
+    grid-template-columns: 1.25fr 0.95fr;
+    align-items: center;
+    gap: 1rem;
+    padding: clamp(1.3rem, 3vw, 2.2rem) 1.2rem clamp(2.4rem, 5vw, 4.1rem);
+}
+
+.aboutHeaderContent h1 {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(4rem, 9vw, 9.5rem);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    color: #f0f0f1;
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.42);
+}
+
+.aboutHeaderAccent {
+    position: absolute;
+    width: clamp(210px, 26vw, 360px);
+    height: clamp(190px, 22vw, 320px);
+    top: clamp(66px, 12vw, 160px);
+    left: min(49%, 700px);
+    transform: translateX(-50%) rotate(-15deg);
+    background: linear-gradient(180deg, rgba(214, 7, 79, 0.88) 0%, rgba(126, 0, 43, 0.85) 100%);
+    clip-path: polygon(18% 0, 100% 0, 82% 100%, 0 100%);
+    box-shadow: 0 22px 34px rgba(67, 0, 23, 0.34);
+    pointer-events: none;
+}
+
+.aboutHeaderImageWrap {
+    position: relative;
+    z-index: 1;
+    justify-self: end;
+    width: min(100%, 630px);
+}
+
+.aboutHeaderImage {
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.42);
+}
+
+@media (max-width: 900px) {
+    .aboutPage {
+        padding-top: var(--navbar-mobile-height);
+    }
+
+    .aboutHeaderSection {
+        min-height: auto;
+    }
+
+    .aboutHeaderInner {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+        padding-top: 1.2rem;
+    }
+
+    .aboutHeaderAccent {
+        left: 55%;
+        top: 26%;
+        width: clamp(170px, 44vw, 280px);
+        height: clamp(140px, 34vw, 220px);
+        opacity: 0.72;
+    }
+
+    .aboutHeaderImageWrap {
+        justify-self: stretch;
+    }
+
+    .aboutHeaderImage {
+        aspect-ratio: 16 / 9;
+    }
+}

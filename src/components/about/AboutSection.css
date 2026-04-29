@@ -1,0 +1,101 @@
+.aboutSection {
+    background: #ececef;
+    color: #111;
+    padding: clamp(2.2rem, 4vw, 4rem) 1.2rem clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.aboutInner {
+    width: min(1320px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.45fr 0.95fr;
+    align-items: start;
+    gap: clamp(2.4rem, 3vw, 3.2rem);
+}
+
+.aboutOverline {
+    margin: 0;
+    color: #c2084f;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.aboutOverline::before,
+.aboutOverline::after {
+    content: "";
+    width: 76px;
+    max-width: 18vw;
+    height: 2px;
+    background: #c2084f;
+}
+
+.aboutLeft h2 {
+    margin: clamp(1rem, 2.1vw, 1.8rem) 0 0;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    color: #c2084f;
+    font-size: clamp(2.2rem, 5.6vw, 5.4rem);
+    line-height: 1.04;
+    letter-spacing: 0.01em;
+}
+
+.aboutContent {
+    margin-top: clamp(1.2rem, 2vw, 2rem);
+    display: grid;
+    grid-template-columns: minmax(160px, 280px) 1fr;
+    align-items: start;
+    gap: clamp(1rem, 2vw, 2rem);
+}
+
+.aboutSmallImage,
+.aboutBigImage {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.aboutSmallImage {
+    aspect-ratio: 3 / 4;
+}
+
+.aboutContent p {
+    margin: 0;
+    color: #5e646c;
+    font-size: clamp(1.05rem, 1.65vw, 2rem);
+    line-height: 1.42;
+    max-width: 480px;
+}
+
+.aboutRight {
+    align-self: stretch;
+}
+
+.aboutBigImage {
+    height: 100%;
+    min-height: 420px;
+    max-height: 640px;
+}
+
+@media (max-width: 900px) {
+    .aboutInner {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutContent {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutSmallImage {
+        max-width: min(310px, 100%);
+    }
+
+    .aboutBigImage {
+        min-height: 200px;
+        max-height: 400px;
+    }
+}

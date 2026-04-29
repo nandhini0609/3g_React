@@ -1,3 +1,5 @@
+import "./AboutSection.css"
+
 export function AboutSection() {
     return (
         <section className="aboutSection" aria-labelledby="about-heading">

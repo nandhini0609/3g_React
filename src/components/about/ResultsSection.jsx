@@ -1,3 +1,5 @@
+import "./ResultsSection.css"
+
 export function ResultsSection() {
     return (
         <section className="resultsSection" aria-labelledby="results-heading">

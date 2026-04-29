@@ -1,0 +1,162 @@
+.aboutTrainerSection {
+    background: #ececef;
+    color: #131313;
+    padding: clamp(3.3rem, 7vw, 6rem) 1.2rem clamp(3.6rem, 7vw, 6rem);
+}
+
+.aboutTrainerInner {
+    width: min(1160px, 100%);
+    margin: 0 auto;
+}
+
+.aboutTrainerHeader {
+    text-align: center;
+}
+
+.aboutTrainerOverline {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    color: #c80e4a;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(1.15rem, 1.8vw, 1.8rem);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.aboutTrainerOverline::before,
+.aboutTrainerOverline::after {
+    content: "";
+    width: 68px;
+    height: 2px;
+    background: #c80e4a;
+}
+
+.aboutTrainerHeader h2 {
+    margin: 1.2rem auto 0;
+    max-width: 980px;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.35rem, 6.8vw, 6.2rem);
+    line-height: 0.96;
+    font-weight: 400;
+    color: #09090a;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+
+.aboutTrainerHeader h2 span {
+    color: #c80e4a;
+}
+
+.aboutTrainerContent {
+    margin-top: clamp(2rem, 5vw, 3.2rem);
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: clamp(1.2rem, 3.4vw, 2.8rem);
+    align-items: start;
+}
+
+.aboutTrainerMediaWrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutTrainerImage {
+    width: 100%;
+    aspect-ratio: 4 / 4.6;
+    object-fit: cover;
+    display: block;
+}
+
+.aboutTrainerExperience {
+    position: absolute;
+    left: clamp(0.8rem, 3vw, 1.6rem);
+    right: clamp(0.8rem, 3vw, 1.6rem);
+    bottom: clamp(0.8rem, 3vw, 1.6rem);
+    border-radius: 20px;
+    background: linear-gradient(180deg, #d1074f 0%, #b70043 100%);
+    color: #ffffff;
+    padding: 0.9rem 1rem;
+}
+
+.aboutTrainerExperienceYears {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.6rem, 6.2vw, 4.3rem);
+    line-height: 0.9;
+}
+
+.aboutTrainerExperienceText {
+    margin: 0.2rem 0 0;
+    font-family: var(--font-poppins);
+    font-size: clamp(1rem, 1.6vw, 1.8rem);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.aboutTrainerDetails p {
+    margin: 0;
+    color: #666e78;
+    font-family: var(--font-poppins);
+    font-size: clamp(1rem, 1.5vw, 1.6rem);
+    line-height: 1.45;
+    font-weight: 500;
+}
+
+.aboutTrainerHighlights {
+    margin-top: clamp(1.4rem, 2.6vw, 2rem);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.aboutTrainerBadge {
+    border-radius: 10px;
+    padding: 0.78rem 0.95rem;
+    background: linear-gradient(180deg, rgba(248, 194, 211, 0.56) 0%, rgba(255, 255, 255, 0.92) 100%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.58rem;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(1rem, 1.25vw, 1.4rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #141416;
+    letter-spacing: 0.01em;
+}
+
+.aboutTrainerBadgeIcon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #cc0a49;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@media (max-width: 900px) {
+    .aboutTrainerContent {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutTrainerHeader h2 {
+        line-height: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    .aboutTrainerHighlights {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutTrainerOverline::before,
+    .aboutTrainerOverline::after {
+        width: 38px;
+    }
+}

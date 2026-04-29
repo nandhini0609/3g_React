@@ -1,3 +1,5 @@
+import "./CommitmentSection.css"
+
 export function CommitmentSection() {
     return (
         <section className="commitmentSection" aria-labelledby="commitment-heading">

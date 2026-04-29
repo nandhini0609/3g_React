@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./PlansSection.css"
 
 const planTabs = ["General Training", "Personal Training", "Body Transformation"]
 

@@ -1,0 +1,295 @@
+.plansSection {
+    padding: clamp(3.2rem, 7vw, 5.8rem) 1.2rem clamp(3.8rem, 7vw, 6rem);
+    background: #050505;
+    color: #f6f6f6;
+}
+
+.plansInner {
+    width: min(1340px, 100%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plansInner h2 {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.35rem, 6.2vw, 4.9rem);
+    line-height: 0.94;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #f7f7f7;
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.65);
+}
+
+.plansInner h2 span {
+    color: #d1154b;
+}
+
+.plansTabs {
+    margin-top: clamp(1.8rem, 4vw, 2.8rem);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.planTab {
+    min-width: 0;
+    border-radius: 12px;
+    padding: 0.9rem 1.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: transparent;
+    color: #b9c0ca;
+    font-family: var(--font-poppins);
+    font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.planTab.active {
+    background: #d1154b;
+    border-color: #d1154b;
+    color: #ffffff;
+}
+
+.plansGrid {
+    margin-top: clamp(2.2rem, 5vw, 3.8rem);
+    display: grid;
+    grid-template-columns: repeat(var(--plan-columns, 4), minmax(0, 280px));
+    justify-content: center;
+    gap: clamp(1rem, 2vw, 2.1rem);
+}
+
+.planCard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    min-height: 520px;
+    padding: clamp(2rem, 3vw, 2.4rem) clamp(1.25rem, 2.4vw, 2rem) clamp(1.5rem, 2.6vw, 2rem);
+    background:
+        radial-gradient(circle at 50% 0%, rgba(149, 16, 52, 0.35) 0%, rgba(149, 16, 52, 0) 32%),
+        linear-gradient(180deg, rgba(23, 10, 16, 0.96) 0%, rgba(10, 10, 12, 0.98) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 28px 44px rgba(0, 0, 0, 0.42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.planCard.featured {
+    background:
+        radial-gradient(circle at 50% 8%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 18%),
+        linear-gradient(180deg, #d1154b 0%, #a50d39 52%, #d85a7f 100%);
+    box-shadow: 0 20px 40px rgba(209, 21, 75, 0.3);
+}
+
+.planCardAccent {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 34%);
+    pointer-events: none;
+}
+
+.planChevrons {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.16);
+    font-size: 1.2rem;
+    line-height: 1;
+    letter-spacing: -0.12em;
+}
+
+.planChevronsTop {
+    top: 0.9rem;
+    left: 0.9rem;
+}
+
+.planChevronsBottom {
+    right: 0.9rem;
+    bottom: 0.9rem;
+}
+
+.planCard h3 {
+    margin: 0.15rem 0 0;
+    color: #ffffff;
+    font-family: var(--font-poppins);
+    font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.planEyebrow {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-family: var(--font-poppins);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.planSubtitle {
+    margin: 0.55rem 0 0;
+    max-width: 760px;
+    color: rgba(255, 255, 255, 0.78);
+    font-family: var(--font-poppins);
+    font-size: clamp(0.98rem, 1.4vw, 1.12rem);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.planRows {
+    margin-top: 1.6rem;
+    width: 100%;
+    display: grid;
+    gap: 0.8rem;
+}
+
+.planRow {
+    display: grid;
+    grid-template-columns: 1.1fr auto;
+    gap: 0.55rem 1rem;
+    align-items: center;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.planRowLabel,
+.planRowPrice,
+.planRowSecondary {
+    color: #ffffff;
+    font-family: var(--font-poppins);
+    font-size: clamp(0.98rem, 1.35vw, 1.08rem);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.planRowLabel {
+    justify-self: start;
+}
+
+.planRowPrice {
+    justify-self: end;
+}
+
+.planRowSecondary {
+    grid-column: 1 / -1;
+    justify-self: start;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.planPrices {
+    margin-top: 1.8rem;
+    display: grid;
+    gap: 0.55rem;
+}
+
+.planPrices p {
+    margin: 0;
+    color: #ffffff;
+    font-family: var(--font-poppins);
+    font-size: clamp(1rem, 1.45vw, 1.2rem);
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.planFeatures {
+    list-style: none;
+    padding: 0;
+    margin: 1.8rem 0 0;
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.planFeatures li {
+    position: relative;
+    padding-left: 2rem;
+    color: #ffffff;
+    font-family: var(--font-poppins);
+    font-size: clamp(0.98rem, 1.35vw, 1.1rem);
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.planFeatures li::before {
+    content: "✜";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.planJoinBtn {
+    margin-top: auto;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.82rem 1.4rem;
+    min-width: 148px;
+    background: #d1154b;
+    color: #ffffff;
+    font-family: var(--font-poppins);
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 16px 26px rgba(209, 21, 75, 0.22);
+    transition: transform 180ms ease, filter 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.planJoinBtn.featured {
+    background: #050505;
+    color: #ffffff;
+    box-shadow: 0 16px 26px rgba(0, 0, 0, 0.25);
+}
+
+.planJoinBtn:hover,
+.planTab:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.04);
+}
+
+.plansNote {
+    margin: 1.8rem auto 0;
+    max-width: 1180px;
+    color: #c4c8cf;
+    font-family: var(--font-poppins);
+    font-size: clamp(0.95rem, 1.45vw, 1.15rem);
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+@media (max-width: 640px) {
+    .plansInner h2 {
+        font-size: clamp(2rem, 9vw, 3.4rem);
+    }
+
+    .plansTabs {
+        gap: 0.7rem;
+    }
+
+    .planTab {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .planCard {
+        min-height: 440px;
+        padding-inline: 1.1rem;
+    }
+
+    .planRow {
+        grid-template-columns: 1fr;
+    }
+
+    .planRowPrice {
+        justify-self: start;
+    }
+}

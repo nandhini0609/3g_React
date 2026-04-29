@@ -1,0 +1,126 @@
+.testimonialsSection {
+    padding: clamp(3.5rem, 7vw, 6rem) 1.2rem clamp(3.5rem, 7vw, 6.5rem);
+    background: #ffffff;
+    color: #121212;
+}
+
+.testimonialsInner {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonialsInner h2 {
+    margin: 0.7rem 0 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.8rem, 7vw, 5.4rem);
+    line-height: 0.9;
+    font-weight: 400;
+    color: #070707;
+    text-transform: none;
+    letter-spacing: 0.01em;
+    text-shadow: none;
+}
+
+.testimonialsInner h2 span {
+    color: #d1154b;
+}
+
+.testimonialsCarousel {
+    margin-top: clamp(2rem, 5vw, 3.4rem);
+    overflow: hidden;
+    padding: 0.5rem 0.25rem 0.25rem;
+}
+
+.testimonialsTrack {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 1.4rem;
+    transition: transform 320ms ease;
+    align-items: stretch;
+}
+
+.storyCard {
+    width: min(100%, 760px);
+    min-height: 385px;
+    margin: 0 auto;
+    padding: clamp(2.2rem, 4vw, 3.6rem) clamp(1.4rem, 3vw, 3.1rem);
+    border-radius: 34px;
+    background: linear-gradient(180deg, rgba(214, 17, 75, 0.06) 0%, rgba(214, 17, 75, 0.04) 100%);
+    box-shadow: 0 20px 60px rgba(216, 18, 78, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(214, 17, 75, 0.04);
+}
+
+.storyQuoteMark {
+    color: #d1154b;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(4rem, 7vw, 6rem);
+    line-height: 0.7;
+    margin-bottom: 0.7rem;
+}
+
+.storyQuote {
+    margin: 0;
+    max-width: 700px;
+    color: #111111;
+    font-size: clamp(1rem, 2vw, 1.45rem);
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.storyAuthor {
+    margin: clamp(1.4rem, 3vw, 2rem) 0 0;
+    color: #111111;
+    font-family: var(--font-poppins);
+    font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.storyControls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.9rem;
+}
+
+.storyButton {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    background: #d1154b;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.45rem;
+    line-height: 1;
+    box-shadow: 0 14px 28px rgba(209, 21, 75, 0.28);
+    transition: transform 180ms ease, filter 180ms ease;
+}
+
+.storyButton:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+}
+
+@media (max-width: 640px) {
+    .testimonialsInner h2 {
+        font-size: clamp(2.3rem, 11vw, 3.8rem);
+    }
+
+    .storyCard {
+        border-radius: 26px;
+        padding: 2rem 1.2rem;
+        min-height: 320px;
+    }
+
+    .storyQuote {
+        font-size: 1rem;
+    }
+}

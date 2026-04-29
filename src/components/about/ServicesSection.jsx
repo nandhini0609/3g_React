@@ -1,3 +1,5 @@
+import "./ServicesSection.css"
+
 const serviceCards = [
     {
         title: "Strength Training",

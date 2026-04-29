@@ -1,4 +1,5 @@
 import logo from "/brand-logo.svg"
+import "./FooterSection.css"
 
 const quickLinks = ["Home", "About", "Services", "Products", "Career", "Franchise", "Contact"]
 
