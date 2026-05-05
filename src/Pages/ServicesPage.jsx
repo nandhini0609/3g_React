@@ -3,6 +3,7 @@ import { ServicesHeaderSection } from "../components/services/ServicesHeaderSect
 import { ServicesStrengthSection } from "../components/services/ServicesStrengthSection"
 import { ServicesWeightLossSection } from "../components/services/ServicesWeightLossSection"
 import { ServicesFunctionalSection } from "../components/services/ServicesFunctionalSection"
+import { ServicesNutritionSection } from "../components/services/ServicesNutritionSection"
 import "../styles/appTokens.css"
 import "./ServicesPage.css"
 
@@ -14,6 +15,7 @@ export function ServicesPage() {
             <ServicesStrengthSection />
             <ServicesWeightLossSection />
             <ServicesFunctionalSection />
+            <ServicesNutritionSection />
         </div>
     )
 }
