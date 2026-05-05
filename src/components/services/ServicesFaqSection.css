@@ -1,0 +1,89 @@
+.servicesFaqSection {
+    background: #e8e8e8;
+    padding: clamp(2rem, 5vw, 4rem) 1rem clamp(3rem, 6vw, 4.5rem);
+}
+
+.servicesFaqInner {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+}
+
+.servicesFaqInner h2 {
+    margin: 0;
+    text-align: center;
+    color: #050509;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 0.95;
+    font-size: clamp(3rem, 6.4vw, 5.8rem);
+}
+
+.servicesFaqList {
+    width: min(680px, 100%);
+    margin: clamp(1.8rem, 4vw, 3rem) auto 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.servicesFaqItem {
+    border: 1px solid #aaaab0;
+    border-radius: 10px;
+    background: #efeff1;
+    overflow: hidden;
+}
+
+.servicesFaqQuestion {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: #111217;
+    text-align: left;
+    font-family: var(--font-poppins);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.15rem 1.2rem;
+    font-size: clamp(1rem, 1.7vw, 1.16rem);
+    cursor: pointer;
+}
+
+.servicesFaqIcon {
+    flex: 0 0 auto;
+    font-size: 1.45rem;
+    line-height: 1;
+    color: #1c1d24;
+}
+
+.servicesFaqAnswer {
+    margin: 0;
+    padding: 0 1.2rem 1.15rem;
+    color: #f5f6f8;
+    font-weight: 600;
+    font-size: clamp(0.95rem, 1.45vw, 1.05rem);
+}
+
+.servicesFaqItem.isOpen {
+    border-color: #c50350;
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    box-shadow: 0 14px 28px rgba(183, 0, 66, 0.26);
+}
+
+.servicesFaqItem.isOpen .servicesFaqQuestion {
+    color: #fff;
+}
+
+.servicesFaqItem.isOpen .servicesFaqIcon {
+    color: #fff;
+}
+
+@media (max-width: 560px) {
+    .servicesFaqQuestion {
+        padding: 1rem;
+    }
+
+    .servicesFaqAnswer {
+        padding: 0 1rem 1rem;
+    }
+}

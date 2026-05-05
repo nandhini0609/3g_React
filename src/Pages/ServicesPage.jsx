@@ -4,6 +4,7 @@ import { ServicesStrengthSection } from "../components/services/ServicesStrength
 import { ServicesWeightLossSection } from "../components/services/ServicesWeightLossSection"
 import { ServicesFunctionalSection } from "../components/services/ServicesFunctionalSection"
 import { ServicesNutritionSection } from "../components/services/ServicesNutritionSection"
+import { ServicesFaqSection } from "../components/services/ServicesFaqSection"
 import "../styles/appTokens.css"
 import "./ServicesPage.css"
 
@@ -16,6 +17,7 @@ export function ServicesPage() {
             <ServicesWeightLossSection />
             <ServicesFunctionalSection />
             <ServicesNutritionSection />
+            <ServicesFaqSection />
         </div>
     )
 }
