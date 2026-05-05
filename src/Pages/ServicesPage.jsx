@@ -1,6 +1,8 @@
 import { NavbarSection } from "../components/about/NavbarSection"
 import { ServicesHeaderSection } from "../components/services/ServicesHeaderSection"
 import { ServicesStrengthSection } from "../components/services/ServicesStrengthSection"
+import { ServicesWeightLossSection } from "../components/services/ServicesWeightLossSection"
+import { ServicesFunctionalSection } from "../components/services/ServicesFunctionalSection"
 import "../styles/appTokens.css"
 import "./ServicesPage.css"
 
@@ -10,6 +12,8 @@ export function ServicesPage() {
             <NavbarSection />
             <ServicesHeaderSection />
             <ServicesStrengthSection />
+            <ServicesWeightLossSection />
+            <ServicesFunctionalSection />
         </div>
     )
 }

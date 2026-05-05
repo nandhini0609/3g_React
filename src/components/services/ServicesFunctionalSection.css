@@ -1,0 +1,150 @@
+.servicesFunctionalSection {
+    background: #e8e8e8;
+    padding: 0 1rem clamp(2rem, 4vw, 3rem);
+}
+
+.servicesFunctionalInner {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(280px, 1.06fr) minmax(280px, 1fr);
+    border: 1px solid #cfcfd3;
+    background: #efeff1;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+}
+
+.servicesFunctionalMedia {
+    position: relative;
+    min-height: 520px;
+}
+
+.servicesFunctionalImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.servicesFunctionalOverlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 44%;
+    background: linear-gradient(180deg, rgba(228, 0, 90, 0) 0%, rgba(189, 0, 73, 0.66) 58%, rgba(228, 0, 90, 0.9) 100%);
+}
+
+.servicesFunctionalLabel {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.15rem;
+    margin: 0;
+    z-index: 1;
+    color: #fff;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.02em;
+    font-size: clamp(2rem, 3.1vw, 3rem);
+    text-shadow: 0 8px 22px rgba(0, 0, 0, 0.42);
+}
+
+.servicesFunctionalContent {
+    padding: clamp(1.6rem, 3.2vw, 3rem);
+    color: #121217;
+}
+
+.servicesFunctionalContent h2 {
+    margin: 0 0 1.5rem;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+    font-size: clamp(3.2rem, 7vw, 5.4rem);
+}
+
+.servicesFunctionalContent h3 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(1.35rem, 2vw, 2rem);
+    color: #06060a;
+}
+
+.servicesFunctionalContent p {
+    margin: 0 0 1.5rem;
+    color: #6f747d;
+    font-size: clamp(1.1rem, 1.6vw, 1.75rem);
+    line-height: 1.2;
+}
+
+.servicesFunctionalContent ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.62rem;
+}
+
+.servicesFunctionalContent li {
+    position: relative;
+    padding-left: 1.8rem;
+    color: #6f747d;
+    font-size: clamp(1.05rem, 1.45vw, 1.5rem);
+    line-height: 1.3;
+}
+
+.servicesFunctionalContent li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    background: linear-gradient(145deg, #ea1565, #b20043);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+.servicesFunctionalBtn {
+    margin-top: 0.5rem;
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    font-family: var(--font-poppins);
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    padding: 0.82rem 1.8rem;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    transition: transform 180ms ease, filter 180ms ease;
+}
+
+.servicesFunctionalBtn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+@media (max-width: 960px) {
+    .servicesFunctionalInner {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesFunctionalMedia {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 560px) {
+    .servicesFunctionalMedia {
+        min-height: 300px;
+    }
+
+    .servicesFunctionalLabel {
+        left: 1rem;
+        bottom: 0.9rem;
+    }
+}
