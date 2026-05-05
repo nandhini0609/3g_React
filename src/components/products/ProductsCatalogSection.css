@@ -1,0 +1,97 @@
+.productsCatalogSection {
+    background: #ececef;
+    padding: clamp(2.6rem, 6vw, 5.5rem) 1.2rem clamp(3rem, 6vw, 5rem);
+}
+
+.productsCatalogInner {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+}
+
+.productsCatalogInner h2 {
+    margin: 0;
+    color: #07070b;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.6rem, 6vw, 5.1rem);
+    font-weight: 400;
+    line-height: 0.92;
+}
+
+.productsCatalogSub {
+    margin: 1rem 0 0;
+    color: #6d7280;
+    font-size: clamp(1rem, 1.6vw, 1.18rem);
+}
+
+.productsCatalogGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.1rem;
+    margin-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.productCard {
+    position: relative;
+    min-height: 440px;
+    overflow: hidden;
+    border-radius: 22px;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.22);
+}
+
+.productCardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.productCardOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(13, 13, 16, 0.15) 0%, rgba(13, 13, 16, 0.84) 100%);
+}
+
+.productCardBody {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 1.1rem;
+}
+
+.productCardBody h3 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1rem, 1.2vw, 1.35rem);
+}
+
+.productCardBody p {
+    margin: 0.3rem 0 0;
+    color: #f6f6f8;
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+}
+
+.productCardBtn {
+    margin-top: 0.8rem;
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    padding: 0.72rem 1.2rem;
+}
+
+.productsSelectedMessage {
+    margin: 1rem 0 0;
+    color: #8d0034;
+    font-weight: 700;
+    font-size: clamp(1rem, 1.2vw, 1.12rem);
+}
+
+@media (max-width: 900px) {
+    .productsCatalogGrid {
+        grid-template-columns: 1fr;
+    }
+}

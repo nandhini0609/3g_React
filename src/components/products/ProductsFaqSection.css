@@ -1,0 +1,72 @@
+.productsFaqSection {
+    background: #e8e8ea;
+    padding: clamp(2rem, 5vw, 4rem) 1.2rem clamp(3rem, 6vw, 4.5rem);
+}
+
+.productsFaqInner {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+}
+
+.productsFaqInner h2 {
+    margin: 0;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(3rem, 6.4vw, 5.8rem);
+    line-height: 0.95;
+    font-weight: 400;
+}
+
+.productsFaqList {
+    width: min(680px, 100%);
+    margin: clamp(1.8rem, 4vw, 3rem) auto 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.productsFaqItem {
+    border: 1px solid #a9a9af;
+    border-radius: 10px;
+    background: #efeff2;
+    overflow: hidden;
+}
+
+.productsFaqQuestion {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.15rem 1.2rem;
+    font-size: clamp(1rem, 1.7vw, 1.16rem);
+}
+
+.productsFaqAnswer {
+    margin: 0;
+    padding: 0 1.2rem 1.15rem;
+    color: #f5f5f8;
+    font-weight: 600;
+    font-size: clamp(0.95rem, 1.45vw, 1.05rem);
+}
+
+.productsFaqItem.isOpen {
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    border-color: #b20045;
+}
+
+.productsFaqItem.isOpen .productsFaqQuestion {
+    color: #fff;
+}
+
+@media (max-width: 560px) {
+    .productsFaqQuestion {
+        padding: 1rem;
+    }
+
+    .productsFaqAnswer {
+        padding: 0 1rem 1rem;
+    }
+}

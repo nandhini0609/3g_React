@@ -1,0 +1,12 @@
+.productsPage {
+    min-height: 100vh;
+    padding-top: var(--navbar-height);
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .productsPage {
+        padding-top: var(--navbar-mobile-height);
+    }
+}

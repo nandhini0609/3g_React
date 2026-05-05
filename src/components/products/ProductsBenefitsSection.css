@@ -1,0 +1,43 @@
+.productsBenefitsSection {
+    background: #e8e8ea;
+    padding: 0 1.2rem clamp(3rem, 6vw, 5rem);
+}
+
+.productsBenefitsInner {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+    border-radius: 22px;
+    padding: clamp(2rem, 4vw, 3rem);
+    background:
+        linear-gradient(110deg, rgba(17, 17, 22, 0.95) 0%, rgba(86, 0, 32, 0.9) 100%),
+        url("/footer-bg.png") center / cover no-repeat;
+    color: #f4f4f7;
+}
+
+.productsBenefitsInner h2 {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2.6rem, 6vw, 5.1rem);
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+.productsBenefitsInner ul {
+    margin: 1.2rem 0 0;
+    padding-left: 1.2rem;
+    display: grid;
+    gap: 0.62rem;
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+}
+
+.productsBenefitsBtn {
+    margin-top: 1.3rem;
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    padding: 0.9rem 1.45rem;
+    font-size: 1rem;
+}

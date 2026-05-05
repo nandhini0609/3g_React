@@ -1,0 +1,54 @@
+.productsHeaderSection {
+    min-height: min(720px, calc(100vh - var(--navbar-height)));
+    background:
+        linear-gradient(100deg, rgba(4, 4, 5, 0.9) 0%, rgba(30, 0, 11, 0.82) 52%, rgba(148, 0, 55, 0.86) 100%),
+        url("/banner-bg.png") center / cover no-repeat;
+    display: grid;
+    align-items: center;
+    padding: clamp(1.3rem, 3vw, 2.2rem) 1.2rem clamp(2.4rem, 5vw, 4.1rem);
+}
+
+.productsHeaderInner {
+    width: min(1360px, 100%);
+    margin: 0 auto;
+}
+
+.productsHeaderOverline {
+    margin: 0;
+    color: #ff7da9;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+.productsHeaderInner h1 {
+    margin: 0.45rem 0 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(4rem, 9vw, 8.8rem);
+    line-height: 0.95;
+}
+
+.productsHeaderCopy {
+    margin: 1rem 0 0;
+    max-width: 700px;
+    color: #e2e3e8;
+    font-size: clamp(1rem, 1.6vw, 1.18rem);
+    line-height: 1.38;
+}
+
+.productsHeaderBtn {
+    margin-top: 1.5rem;
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    background: linear-gradient(120deg, #ca004f, #f2035f);
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    transition: transform 180ms ease, filter 180ms ease;
+}
+
+.productsHeaderBtn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}

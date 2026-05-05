@@ -6,7 +6,7 @@ import { ServicesSection } from "../components/about/ServicesSection"
 import { TestimonialsSection } from "../components/about/TestimonialsSection"
 import { PlansSection } from "../components/about/PlansSection"
 import { CommitmentSection } from "../components/about/CommitmentSection"
-import { FooterSection } from "../components/about/FooterSection"
+import { ServicesFooterSection } from "../components/services/ServicesFooterSection"
 import "./Home.css"
 
 export function Home() {
@@ -20,7 +20,7 @@ export function Home() {
             <TestimonialsSection />
             <PlansSection />
             <CommitmentSection />
-            <FooterSection />
+            <ServicesFooterSection />
         </div>
     )
 }

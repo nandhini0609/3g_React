@@ -5,7 +5,7 @@ import { AboutCardsSection } from "../components/aboutPage/AboutCardsSection"
 import { AboutChooseSection } from "../components/aboutPage/AboutChooseSection"
 import { AboutCoachesSection } from "../components/aboutPage/AboutCoachesSection"
 import { AboutInfrastructureSection } from "../components/aboutPage/AboutInfrastructureSection"
-import { AboutFooterSection } from "../components/aboutPage/AboutFooterSection"
+import { ServicesFooterSection } from "../components/services/ServicesFooterSection"
 import "../styles/appTokens.css"
 
 export function AboutPage() {
@@ -18,7 +18,7 @@ export function AboutPage() {
             <AboutChooseSection />
             <AboutCoachesSection />
             <AboutInfrastructureSection />
-            <AboutFooterSection />
+            <ServicesFooterSection />
         </div>
     )
 }
