@@ -1,0 +1,95 @@
+.servicesHeaderSection {
+    position: relative;
+    overflow: hidden;
+    min-height: min(720px, calc(100vh - var(--navbar-height)));
+    background:
+        linear-gradient(90deg, rgba(3, 6, 10, 0.92) 0%, rgba(3, 6, 10, 0.82) 48%, rgba(125, 0, 41, 0.95) 48%, rgba(134, 0, 44, 0.96) 100%),
+        url("/banner-bg.png") center / cover no-repeat;
+}
+
+.servicesHeaderInner {
+    width: min(1360px, 100%);
+    margin: 0 auto;
+    min-height: inherit;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 1rem;
+    padding: clamp(1.3rem, 3vw, 2.2rem) 1.2rem clamp(2.4rem, 5vw, 4.1rem);
+}
+
+.servicesHeaderContent h1 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(4rem, 9vw, 8.8rem);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    color: #eceef1;
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.42);
+}
+
+.servicesHeaderAccent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: clamp(250px, 30vw, 460px);
+    left: min(50.5%, 760px);
+    transform: translateX(-42%) skewX(-14deg);
+    z-index: 0;
+    background:
+        linear-gradient(180deg, rgba(235, 8, 90, 0.94) 0%, rgba(182, 0, 62, 0.92) 40%, rgba(116, 0, 39, 0.92) 100%),
+        linear-gradient(120deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 44%);
+    box-shadow:
+        0 26px 42px rgba(67, 0, 23, 0.4),
+        inset 1px 0 0 rgba(255, 255, 255, 0.28),
+        inset -1px 0 0 rgba(45, 0, 14, 0.46);
+    pointer-events: none;
+}
+
+.servicesHeaderImageWrap {
+    position: relative;
+    z-index: 2;
+    justify-self: end;
+    width: min(100%, 640px);
+}
+
+.servicesHeaderImage {
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.42);
+}
+
+@media (max-width: 900px) {
+    .servicesHeaderSection {
+        min-height: auto;
+    }
+
+    .servicesHeaderInner {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+        padding-top: 1.2rem;
+    }
+
+    .servicesHeaderAccent {
+        top: 18%;
+        bottom: 2%;
+        left: 57%;
+        width: clamp(140px, 36vw, 230px);
+        transform: translateX(-50%) skewX(-12deg);
+        opacity: 0.82;
+    }
+
+    .servicesHeaderImageWrap {
+        justify-self: stretch;
+    }
+
+    .servicesHeaderImage {
+        aspect-ratio: 16 / 9;
+    }
+}

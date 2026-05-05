@@ -10,7 +10,7 @@ export function NavbarSection() {
             <nav className="navLinks" aria-label="Primary">
                 <NavLink to="/" end>Home</NavLink>
                 <NavLink to="/about">About</NavLink>
-                <a href="#">Services</a>
+                <NavLink to="/services">Services</NavLink>
                 <a href="#">Products</a>
                 <a href="#">Career</a>
                 <a href="#">Franchise</a>
