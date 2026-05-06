@@ -40,7 +40,7 @@ export function TestimonialsSection() {
                 <div className="testimonialsCarousel" aria-live="polite">
                     <div
                         className="testimonialsTrack"
-                        style={{ transform: `translateX(-${activeIndex * 84}%)` }}
+                        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
                     >
                         {testimonials.map((testimonial) => (
                             <article className="storyCard" key={testimonial.author}>
