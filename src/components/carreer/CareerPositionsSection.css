@@ -1,0 +1,130 @@
+.careerPositionsSection {
+    background: #f6f6f7;
+    color: #111;
+    padding: clamp(2.5rem, 5vw, 4.5rem) 1.2rem clamp(2.5rem, 5vw, 4rem);
+}
+
+.careerPositionsInner {
+    width: min(1260px, 100%);
+    margin: 0 auto;
+}
+
+.careerPositionsInner h2 {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(3rem, 6vw, 5.8rem);
+    line-height: 0.95;
+    color: #050505;
+    letter-spacing: 0.01em;
+}
+
+.careerPositionsGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.1rem;
+}
+
+.careerPositionCard {
+    border: 1px solid rgba(20, 20, 20, 0.28);
+    border-radius: 18px;
+    background: #fff;
+    padding: 1.35rem 1.35rem 1.25rem;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+    min-height: 146px;
+}
+
+.careerPositionCard.isActive {
+    background: linear-gradient(135deg, #c90b4b, #d40d50 65%, #d81254);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 16px 34px rgba(201, 11, 75, 0.24);
+}
+
+.careerPositionHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.careerPositionHeader h3 {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.careerPositionCard p {
+    margin: 1.15rem 0 0;
+    max-width: 92%;
+    font-size: 1rem;
+    line-height: 1.45;
+}
+
+.careerPositionCheck {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    border: 1.5px solid currentColor;
+    display: grid;
+    place-items: center;
+    margin-top: -0.1rem;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.careerPositionCard.isActive .careerPositionCheck {
+    background: rgba(255, 255, 255, 0.98);
+    color: #c90b4b;
+}
+
+.careerPositionCheck span {
+    width: 14px;
+    height: 14px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-3px) rotate(45deg);
+}
+
+.careerPositionsPager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 1.8rem;
+}
+
+.careerPagerBtn {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(20, 20, 20, 0.16);
+    background: #fff;
+    color: #9b9b9b;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.careerPagerBtn.isCurrent {
+    width: 34px;
+    height: 34px;
+    background: #c90b4b;
+    color: #fff;
+    border-color: #c90b4b;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .careerPositionsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .careerPositionCard p {
+        max-width: 100%;
+    }
+}
