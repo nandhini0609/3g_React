@@ -1,0 +1,235 @@
+.contactInfoSection {
+    background: #ffffff;
+    padding: 44px 0 56px;
+}
+
+.contactInfoContainer {
+    width: min(1200px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.contactInfoCards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 0;
+}
+
+.contactInfoCard {
+    background: #ffffff;
+    border: 1px solid rgba(214, 27, 78, 0.42);
+    border-radius: 20px;
+    min-height: 220px;
+    padding: 24px 18px;
+    text-align: center;
+    box-shadow: 0 14px 30px rgba(214, 27, 78, 0.06);
+}
+
+.contactInfoIcon {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: grid;
+    place-items: center;
+    color: #d61b4e;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.contactInfoCard h3 {
+    margin: 0 0 12px;
+    font-family: Anton, sans-serif;
+    font-size: clamp(2rem, 2.8vw, 3rem);
+    line-height: 1;
+    font-weight: 400;
+    color: #0f0f0f;
+}
+
+.contactInfoCard p {
+    margin: 0;
+    font-size: clamp(0.98rem, 1.4vw, 1.15rem);
+    line-height: 1.3;
+    color: #767676;
+    word-break: break-word;
+}
+
+.contactInfoCard p+p {
+    margin-top: 2px;
+}
+
+.contactInfoLayout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.93fr) minmax(0, 1.07fr);
+    gap: 18px;
+    margin-top: 48px;
+    align-items: stretch;
+}
+
+.contactFormCard {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 14px 30px rgba(160, 79, 186, 0.14);
+    padding: 28px 24px 24px;
+}
+
+.contactFormCard h2 {
+    margin: 0 0 22px;
+    text-align: center;
+    font-family: Anton, sans-serif;
+    font-size: clamp(2.2rem, 3.6vw, 3.1rem);
+    line-height: 1;
+    font-weight: 400;
+    color: #d61b4e;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    border-radius: 6px;
+    background: #ffffff;
+    color: #1a1a1a;
+    font: inherit;
+    font-size: 0.98rem;
+    padding: 0.95rem 0.9rem;
+    outline: none;
+}
+
+.contactForm textarea {
+    resize: vertical;
+    min-height: 126px;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+    color: #9a9a9a;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    border-color: #d61b4e;
+    box-shadow: 0 0 0 3px rgba(214, 27, 78, 0.14);
+}
+
+.contactFormStatus {
+    margin: -4px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.contactFormStatusError {
+    color: #bf2849;
+}
+
+.contactFormStatusSuccess {
+    color: #1f8a47;
+}
+
+.contactFormSubmitBtn {
+    width: 150px;
+    min-height: 52px;
+    border: none;
+    border-radius: 24px;
+    background: #d61b4e;
+    color: #ffffff;
+    font-family: Anton, sans-serif;
+    font-size: 1.65rem;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 12px 26px rgba(214, 27, 78, 0.3);
+    transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+.contactFormSubmitBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 30px rgba(214, 27, 78, 0.38);
+}
+
+.contactFormSubmitBtn:disabled {
+    cursor: wait;
+    opacity: 0.84;
+    transform: none;
+}
+
+.contactMapCard {
+    min-height: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+    background: #f3f3f3;
+}
+
+.contactMapCard iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: 0;
+    display: block;
+}
+
+@media (max-width: 980px) {
+    .contactInfoCards {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+
+    .contactInfoLayout {
+        grid-template-columns: 1fr;
+        margin-top: 24px;
+    }
+
+    .contactMapCard iframe {
+        min-height: 340px;
+    }
+}
+
+@media (max-width: 680px) {
+    .contactInfoSection {
+        padding: 32px 0 40px;
+    }
+
+    .contactInfoContainer {
+        width: min(100%, calc(100% - 1rem));
+    }
+
+    .contactInfoCards {
+        gap: 14px;
+    }
+
+    .contactInfoCard {
+        min-height: auto;
+        padding: 20px 14px;
+        border-radius: 16px;
+    }
+
+    .contactInfoCard h3 {
+        font-size: 2rem;
+    }
+
+    .contactInfoCard p {
+        font-size: 0.98rem;
+    }
+
+    .contactFormCard {
+        padding: 22px 16px 18px;
+    }
+
+    .contactFormSubmitBtn {
+        width: 130px;
+        min-height: 48px;
+        font-size: 1.4rem;
+    }
+
+    .contactMapCard iframe {
+        min-height: 280px;
+    }
+}
