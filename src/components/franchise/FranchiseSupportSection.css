@@ -1,0 +1,141 @@
+.franchiseSupportSection {
+    background: linear-gradient(180deg, rgba(20, 5, 15, 0.95) 0%, rgba(15, 4, 12, 0.98) 100%),
+        radial-gradient(circle at top center, rgba(229, 29, 98, 0.08), transparent 45%);
+    color: #fff;
+    padding: clamp(3.2rem, 5.8vw, 5rem) 1.2rem clamp(3.2rem, 5.8vw, 4.8rem);
+}
+
+.franchiseSupportInner {
+    width: min(1260px, 100%);
+    margin: 0 auto;
+}
+
+.franchiseSupportHeader {
+    text-align: center;
+    margin-bottom: clamp(2.2rem, 4.2vw, 3.4rem);
+}
+
+.franchiseSupportSubtitle {
+    margin: 0;
+    color: #999;
+    font-size: 0.92rem;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 clamp(3rem, 8vw, 6rem);
+    display: inline-block;
+}
+
+.franchiseSupportSubtitle::before,
+.franchiseSupportSubtitle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: clamp(2rem, 5vw, 3.5rem);
+    height: 1px;
+    background: #666;
+}
+
+.franchiseSupportSubtitle::before {
+    left: 0;
+}
+
+.franchiseSupportSubtitle::after {
+    right: 0;
+}
+
+.franchiseSupportHeader h2 {
+    margin: 1rem 0 0;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: clamp(3.2rem, 7.5vw, 6.2rem);
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+}
+
+.franchiseSupportGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.35rem;
+}
+
+.franchiseSupportCard {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    background: rgba(15, 10, 20, 0.65);
+    backdrop-filter: blur(10px);
+    padding: 1.8rem 1.5rem 1.5rem;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 280ms ease;
+}
+
+.franchiseSupportCard.isFeatured {
+    background: linear-gradient(135deg, #c91147 0%, #e11d5f 100%);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 24px 56px rgba(233, 29, 95, 0.32);
+}
+
+.franchiseSupportCard:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+.franchiseSupportCardInner h3 {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+    line-height: 1.15;
+    color: #fff;
+}
+
+.franchiseSupportCardLine {
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin: 0.8rem 0 0;
+}
+
+.franchiseSupportCard.isFeatured .franchiseSupportCardLine {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.franchiseSupportCardInner p {
+    margin: 1rem 0 0;
+    font-size: 0.98rem;
+    line-height: 1.55;
+    color: #d6d6d8;
+}
+
+.franchiseSupportCard.isFeatured .franchiseSupportCardInner p {
+    color: #fff;
+}
+
+.franchiseSupportCardIcon {
+    font-size: clamp(2.6rem, 4vw, 3.4rem);
+    opacity: 0.15;
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1120px) {
+    .franchiseSupportGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.1rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .franchiseSupportGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .franchiseSupportCard {
+        min-height: 260px;
+    }
+}
