@@ -16,7 +16,7 @@ export function NavbarSection() {
                 <NavLink to="/services">Services</NavLink>
                 <NavLink to="/products">Products</NavLink>
                 <NavLink to="/career">Career</NavLink>
-                <a href="#">Franchise</a>
+                <NavLink to="/franchise">Franchise</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
             </nav>
 
