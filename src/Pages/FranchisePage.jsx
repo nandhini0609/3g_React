@@ -4,6 +4,7 @@ import { FranchiseIntroSection } from "../components/franchise/FranchiseIntroSec
 import { FranchiseSupportSection } from "../components/franchise/FranchiseSupportSection"
 import { FranchiseRequirementsSection } from "../components/franchise/FranchiseRequirementsSection"
 import { FranchiseProcessSection } from "../components/franchise/FranchiseProcessSection"
+import { FranchiseContactSection } from "../components/franchise/FranchiseContactSection"
 import { ServicesFooterSection } from "../components/services/ServicesFooterSection"
 import "./FranchisePage.css"
 
@@ -16,6 +17,7 @@ export function FranchisePage() {
             <FranchiseSupportSection />
             <FranchiseRequirementsSection />
             <FranchiseProcessSection />
+            <FranchiseContactSection />
             <ServicesFooterSection />
         </div>
     )

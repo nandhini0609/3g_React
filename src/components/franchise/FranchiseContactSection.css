@@ -1,0 +1,233 @@
+.franchiseContactSection {
+    background: #ffffff;
+    padding: 40px 0 56px;
+}
+
+.franchiseContactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.franchiseContactInfo {
+    padding: 40px 0 60px;
+}
+
+.franchiseContactEyebrow {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+    color: #d61b4e;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.franchiseContactLine {
+    width: 70px;
+    height: 2px;
+    background: #d61b4e;
+    display: inline-block;
+}
+
+.franchiseContactTitle {
+    font-family: Anton, sans-serif;
+    font-weight: 400;
+    font-size: clamp(44px, 5vw, 74px);
+    line-height: 0.98;
+    color: #0d0d0d;
+    margin: 0 0 40px;
+    max-width: 540px;
+}
+
+.franchiseContactTitle span {
+    color: #d61b4e;
+}
+
+.franchiseContactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 520px;
+}
+
+.contactDetail h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    line-height: 1.1;
+    color: #0d0d0d;
+}
+
+.contactDetail p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #777;
+}
+
+.franchiseContactFormCard {
+    background: linear-gradient(135deg, #7f001e 0%, #0d0606 100%);
+    border-radius: 24px;
+    padding: 34px 30px 32px;
+    color: #ffffff;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.franchiseContactFormCard h3 {
+    margin: 0 0 22px;
+    text-align: center;
+    font-size: clamp(28px, 3vw, 40px);
+    line-height: 1.1;
+}
+
+.franchiseContactFormCard p {
+    margin: 0 0 28px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.franchiseContactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.franchiseContactForm input {
+    width: 100%;
+    min-height: 58px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: rgba(10, 4, 4, 0.55);
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0 16px;
+    outline: none;
+}
+
+.franchiseContactForm input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.franchiseContactForm input:focus {
+    border-color: #f0507a;
+    box-shadow: 0 0 0 3px rgba(214, 27, 78, 0.18);
+}
+
+.franchiseContactStatus {
+    margin: -6px 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.franchiseContactStatusError {
+    color: #ffb3c3;
+}
+
+.franchiseContactStatusSuccess {
+    color: #d9ffe0;
+}
+
+.franchiseContactSubmitBtn {
+    min-height: 54px;
+    border: none;
+    border-radius: 8px;
+    background: #d61b4e;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 12px 28px rgba(214, 27, 78, 0.32);
+}
+
+.franchiseContactSubmitBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 32px rgba(214, 27, 78, 0.4);
+}
+
+.franchiseContactSubmitBtn:disabled {
+    cursor: wait;
+    opacity: 0.85;
+    transform: none;
+}
+
+@media (max-width: 980px) {
+    .franchiseContactContainer {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .franchiseContactInfo {
+        padding: 20px 0 0;
+    }
+
+    .franchiseContactTitle {
+        max-width: none;
+    }
+
+    .franchiseContactDetails {
+        max-width: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .franchiseContactSection {
+        padding: 24px 0 40px;
+    }
+
+    .franchiseContactContainer {
+        padding: 0 14px;
+    }
+
+    .franchiseContactEyebrow {
+        font-size: 22px;
+        gap: 12px;
+    }
+
+    .franchiseContactLine {
+        width: 48px;
+    }
+
+    .franchiseContactTitle {
+        margin-bottom: 28px;
+    }
+
+    .contactDetail h3 {
+        font-size: 18px;
+    }
+
+    .contactDetail p {
+        font-size: 15px;
+    }
+
+    .franchiseContactFormCard {
+        padding: 28px 18px;
+        border-radius: 20px;
+    }
+
+    .franchiseContactFormCard p {
+        font-size: 15px;
+    }
+
+    .franchiseContactForm {
+        gap: 16px;
+    }
+
+    .franchiseContactForm input {
+        min-height: 52px;
+        font-size: 16px;
+    }
+
+    .franchiseContactSubmitBtn {
+        min-height: 50px;
+        font-size: 17px;
+    }
+}
