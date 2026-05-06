@@ -1,0 +1,168 @@
+.careerApplySection {
+    background: #f7f6f8;
+    padding: 0 1.2rem 2.5rem;
+}
+
+.careerApplyInner {
+    width: min(1260px, 100%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
+    gap: 1.2rem;
+    align-items: start;
+}
+
+.careerApplyMedia {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+.careerApplyImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1.2 / 0.93;
+    object-fit: cover;
+}
+
+.careerApplyFormCard {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 16px 34px rgba(133, 70, 160, 0.14), 0 4px 16px rgba(0, 0, 0, 0.05);
+    padding: 1.15rem 1.1rem 1.2rem;
+    border: 1px solid rgba(126, 81, 155, 0.18);
+}
+
+.careerApplyFormCard h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+    color: #c9164c;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.careerApplyForm {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.careerApplyForm input,
+.careerApplyForm textarea {
+    width: 100%;
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 8px;
+    padding: 0.85rem 0.95rem;
+    font: inherit;
+    color: #222;
+    background: #fff;
+    outline: none;
+}
+
+.careerApplyForm input::placeholder,
+.careerApplyForm textarea::placeholder {
+    color: #9b9b9b;
+}
+
+.careerApplyForm input:focus,
+.careerApplyForm textarea:focus {
+    border-color: #c9164c;
+    box-shadow: 0 0 0 3px rgba(201, 22, 76, 0.1);
+}
+
+.careerApplyForm textarea {
+    resize: vertical;
+    min-height: 92px;
+}
+
+.careerApplyUploadRow {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 8px;
+    padding: 0.45rem 0.7rem;
+    min-height: 46px;
+}
+
+.careerApplyUploadButton {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid rgba(20, 20, 20, 0.16);
+    border-radius: 4px;
+    padding: 0.35rem 0.55rem;
+    color: #9a9a9a;
+    font-size: 0.95rem;
+    cursor: pointer;
+    background: #f7f7f7;
+}
+
+.careerApplyUploadButton input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.careerApplyUploadText {
+    color: #9d9d9d;
+    font-size: 0.95rem;
+}
+
+.careerApplyHint {
+    margin: -0.25rem 0 0;
+    color: #a0a0a7;
+    font-size: 0.8rem;
+}
+
+.careerApplyStatus {
+    margin: -0.2rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.35;
+}
+
+.careerApplyStatusSuccess {
+    color: #248d3b;
+}
+
+.careerApplyStatusError {
+    color: #c11b4e;
+}
+
+.careerApplySubmitBtn {
+    width: fit-content;
+    min-width: 150px;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(120deg, #c9164c, #dc0f53);
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 0.95rem 1.9rem;
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(201, 22, 76, 0.22);
+}
+
+.careerApplySubmitBtn:hover {
+    filter: brightness(1.06);
+}
+
+.careerApplySubmitBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.82;
+}
+
+@media (max-width: 900px) {
+    .careerApplyInner {
+        grid-template-columns: 1fr;
+    }
+
+    .careerApplySection {
+        padding-bottom: 2rem;
+    }
+}
